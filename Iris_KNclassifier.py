@@ -25,3 +25,4 @@ result=knn.predict([[2, 4, 3, 1], [4, 6, 5, 3]])
 print(result,iris_flower.target_names[result])
 
 
+
