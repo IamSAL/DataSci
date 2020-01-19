@@ -1,45 +1,44 @@
-from sklearn.model_selection import train_test_split
+import warnings
+
+
 import numpy as np
+import tensorflow as tf
 from sklearn.datasets import load_iris
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
-from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
 
-import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
-iris=load_iris()
+iris = load_iris()
 
-X=iris.data
-y=iris.target
-
+X = iris.data
+y = iris.target
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=3)
 
-#logistic_reg
-lgr=LogisticRegression(solver='liblinear',multi_class='auto')
+# logistic_reg
+lgr = LogisticRegression(solver='liblinear', multi_class='auto')
 lgr.fit(X_train, y_train)
-y_pred=lgr.predict(X_test)
-score_lr=accuracy_score(y_test, y_pred)
+y_pred = lgr.predict(X_test)
+score_lr = accuracy_score(y_test, y_pred)
 
-#KNN
-knn2=KNeighborsClassifier()
-param_grid={'n_neighbors':np.arange(1,50)}
-knn_gscv=GridSearchCV(knn2,param_grid,cv=5)
-knn_gscv.fit(X_train,y_train)
-k=knn_gscv.best_params_['n_neighbors']
+# KNN
+knn2 = KNeighborsClassifier()
+param_grid = {'n_neighbors': np.arange(1, 50)}
+knn_gscv = GridSearchCV(knn2, param_grid, cv=5)
+knn_gscv.fit(X_train, y_train)
+k = knn_gscv.best_params_['n_neighbors']
 
-knn=KNeighborsClassifier(n_neighbors=k)
-knn.fit(X_train,y_train)
-y_pred_knn=knn.predict(X_test)
-score_knn=accuracy_score(y_test, y_pred_knn)
+knn = KNeighborsClassifier(n_neighbors=k)
+knn.fit(X_train, y_train)
+y_pred_knn = knn.predict(X_test)
+score_knn = accuracy_score(y_test, y_pred_knn)
 
-
-
-print("logistic_regression:",score_lr)
-print("KNN:",score_knn)
-
+print("logistic_regression:", score_lr)
+print("KNN:", score_knn)
 
 # My method of finding accuracy:
 # succZ=[]
