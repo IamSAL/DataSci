@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bcbcb0d-9f41-4bd0-9ca8-18039d46c820" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iris_KNclassifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/Iris_KNclassifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iris_KNclassifier_check_n30.py" beforeDir="false" afterPath="$PROJECT_DIR$/Iris_KNclassifier_check_n30.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JunkCodes_tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/JunkCodes_tester.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Train_Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Train_Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iris_LogisticRegression.py" beforeDir="false" afterPath="$PROJECT_DIR$/iris_LogisticRegression.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,11 +28,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
-  <component name="RunManager" selected="Python.Train_Test">
+  <component name="RunManager" selected="Python.matplot_iris">
     <configuration name="Iris_KNclassifier" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="irisFlower" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -52,28 +48,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Iris_KNclassifier.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Iris_KNclassifier_check_n30" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="irisFlower" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Iris_KNclassifier_check_n30.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -148,13 +122,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="matplot_iris" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="irisFlower" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/matplot_iris.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.matplot_iris" />
         <item itemvalue="Python.Train_Test" />
         <item itemvalue="Python.iris_LogisticRegression" />
         <item itemvalue="Python.JunkCodes_tester" />
         <item itemvalue="Python.Iris_KNclassifier" />
-        <item itemvalue="Python.Iris_KNclassifier_check_n30" />
       </list>
     </recent_temporary>
   </component>
@@ -187,6 +183,10 @@
       <workItem from="1579168401549" duration="274000" />
       <workItem from="1579452207682" duration="3554000" />
       <workItem from="1579467532511" duration="3644000" />
+      <workItem from="1579477320417" duration="827000" />
+      <workItem from="1579637318385" duration="606000" />
+      <workItem from="1579638011887" duration="4611000" />
+      <workItem from="1580484681347" duration="3647000" />
     </task>
     <servers />
   </component>
@@ -198,22 +198,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1578856016175" />
-    <state width="1323" height="215" key="GridCell.Tab.0.bottom" timestamp="1579474349791">
+    <state width="1323" height="259" key="GridCell.Tab.0.bottom" timestamp="1580489439789">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="215" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1579474349791" />
-    <state width="1323" height="215" key="GridCell.Tab.0.center" timestamp="1579474349791">
+    <state width="1323" height="259" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1580489439789" />
+    <state width="1323" height="259" key="GridCell.Tab.0.center" timestamp="1580489439789">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="215" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1579474349791" />
-    <state width="1323" height="215" key="GridCell.Tab.0.left" timestamp="1579474349791">
+    <state width="1323" height="259" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1580489439789" />
+    <state width="1323" height="259" key="GridCell.Tab.0.left" timestamp="1580489439789">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="215" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1579474349791" />
-    <state width="1323" height="215" key="GridCell.Tab.0.right" timestamp="1579474349791">
+    <state width="1323" height="259" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1580489439789" />
+    <state width="1323" height="259" key="GridCell.Tab.0.right" timestamp="1580489439789">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="215" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1579474349791" />
+    <state width="1323" height="259" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1580489439789" />
     <state width="1323" height="227" key="GridCell.Tab.1.bottom" timestamp="1578865183063">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -234,16 +234,17 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="12" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1579473662108" />
-    <state x="379" y="194" key="com.intellij.ide.util.TipDialog" timestamp="1579467537495">
+    <state x="379" y="194" key="com.intellij.ide.util.TipDialog" timestamp="1580484686304">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="379" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1579467537495" />
+    <state x="379" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1580484686304" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/irisFlower$Iris_KNclassifier_check_n30.coverage" NAME="Iris_KNclassifier_check_n30 Coverage Results" MODIFIED="1578682132389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/irisFlower$JunkCodes_tester.coverage" NAME="JunkCodes_tester Coverage Results" MODIFIED="1579464955816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/irisFlower$matplot_iris.coverage" NAME="matplot_iris Coverage Results" MODIFIED="1580489439773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/irisFlower$Iris_KNclassifier.coverage" NAME="Iris_KNclassifier Coverage Results" MODIFIED="1578851795088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/irisFlower$Train_Test.coverage" NAME="Train_Test Coverage Results" MODIFIED="1579473333176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/irisFlower$iris_LogisticRegression.coverage" NAME="iris_LogisticRegression Coverage Results" MODIFIED="1579467678842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/irisFlower$Train_Test.coverage" NAME="Train_Test Coverage Results" MODIFIED="1580485924823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/irisFlower$iris_LogisticRegression.coverage" NAME="iris_LogisticRegression Coverage Results" MODIFIED="1579640261565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

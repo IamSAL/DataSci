@@ -2,7 +2,6 @@ import warnings
 
 
 import numpy as np
-import tensorflow as tf
 from sklearn.datasets import load_iris
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
